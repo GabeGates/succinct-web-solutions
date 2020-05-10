@@ -1,0 +1,109 @@
+
+@media (max-width: 1200px) {
+    legend {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    h1,
+    .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    h2,
+    .h2 {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+    h3,
+    .h3 {
+        font-size: calc(1.3rem + 0.6vw);
+    }
+    h4,
+    .h4 {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    .display-1 {
+        font-size: calc(1.725rem + 5.7vw);
+    }
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+    }
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+    }
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+    .close {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+.navbar {
+    margin: 2px; top: 2px;
+}
+
+.alert {
+    margin: 2px; top: 60px;
+}
+
+.list-group-flush .list-group-item:first-child {
+    border-top-width: 1px;
+}
+
+.scinct-logo-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.scinct-cutout-01 {
+    height:250px;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+}
+
+.scinct-cutout-02 {
+    width: 150px;
+}
+
+.scinct-h1-container {
+    height: 300px;
+}
+
+.scinct-card-container [class^="col-"] {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.scinct-carousel-control {
+    width: 50px;
+    height: 50px;
+    display: table;
+    background-color: rgba(0,0,0,.5);
+}
+
+.scinct-carousel-control > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.scinct-carousel-control > div > span {
+    vertical-align: -20%
+}
+
+@media (min-width: 768px) {
+    .scinct-cutout-01 {
+        margin-right: 150px
+    }
+    .scinct-cutout-02 {
+        width: 200px;
+    }
+}
+
+@media (min-width: 900px) {
+    .scinct-cutout-01 {
+        margin-right: 175px
+    }
+    .scinct-cutout-02 {
+        width: 250px;
+    }
+}

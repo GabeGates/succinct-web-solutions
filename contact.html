@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="Tell us about your business needs and ideas. We specialize in search engine optimization websites for
+        promoting businesses as well as enterprise level applications to optimize workflow in your business. We have knowledge in frontend and backend technologies
+        using a viariety languages, frameworks, and services to get the job done. This includes Java, HTML, CSS, JavaScript, Angular, React, Spring, Meteor,
+        MySQL, MongoDB, Elasticache, AWS, Node, Docker, Webpack and Cordova.">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="./styles/main.css" rel="stylesheet">
+
+        <title>Contact Us | Succinct Web Solutions </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top rounded">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./assets/logo.svg" class="d-inline-block align-top scinct-logo-icon" alt="Succinct Web Solutions Icon">
+              Web Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./our-work.html">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <h2>Let us Help</h2>
+        </div>
+
+        <div class="container">
+            <p class="lead">
+                Building a web solution is no simple task. We cover hosting your solution, setting up a domain,
+                and generating your content to save you time.
+            </p>
+        </div>
+
+        <div class="container">
+            <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="yourName">Full Name</label>
+                    <input type="text" class="form-control" id="yourName" name="name" placeholder="Eg John Doe" required>
+                    <div class="invalid-feedback">
+                        Please enter your full name.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="yourEmail">Email</label>
+                    <input type="email" class="form-control" id="yourEmail" name="email" placeholder="Eg example@email.com" required aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <div class="invalid-feedback">
+                        Please enter your email.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="yourMessage">Message</label>
+                    <textarea class="form-control" id="yourMessage" name="message" placeholder="Write us a message about your business needs" minlength="100" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the text area, it must contain at least 100 characters.
+                        <span></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Send Message</button>
+                <input type="reset" value="Clear" class="btn btn-secondary mb-2">
+            </form>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+        <script>
+            function sendEmail(form) {
+                let data = transformFormIntoObject(form);
+                data.source = 'Contact Form : Succinct';
+                return $.ajax({
+                    method: "POST",
+                    url: "https://us-central1-scenic-block-276119.cloudfunctions.net/sendEmail",
+                    data: data
+                })
+                .done(function(response) {
+                    $('nav').after(`
+                        <div class="alert alert-success sticky-top rounded alert-dismissible fade show" role="alert">
+                            Message sent successfully. We will respond to <strong>${data.email}</strong> as soon as we can. Thank you!
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    `);
+                    form.reset();
+                    form.classList.remove('was-validated');
+                })
+                .fail(function(request) {
+                    $('nav').after(`
+                        <div class="alert alert-danger sticky-top rounded alert-dismissible fade show" role="alert">
+                            There was a problem sending the email. We apologize for this inconvenience. Please try again later or email us directly at <strong>succinct.web.solutions@gmail.com</strong>.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    `);
+                });
+            }
+
+            function transformFormIntoObject(form) {
+                var formArray = $(form).serializeArray();
+                var formObject = {};
+                for (var i = 0; i < formArray.length; i++){
+                    formObject[formArray[i]['name']] = formArray[i]['value'];
+                }
+                return formObject;
+            }
+
+            $(document).ready(function() {
+                function youNeedMoreCharacters(inputElement) {
+                    let minlength = $(inputElement).attr("minlength");
+                    let currentLength = $(inputElement).val().length;
+                    $(inputElement).siblings('.invalid-feedback').find('span:first').html('You need <b>' + (minlength - currentLength) + '</b> more characters.');
+                }
+
+                $("input:reset").click(function() {
+                    this.form.reset();
+
+                    $(this.form).find('textarea[minlength]').each(function(){
+                        youNeedMoreCharacters(this);
+                    });
+
+                    return false;
+                });
+
+                $('textarea[minlength]').on("input", function(){
+                    youNeedMoreCharacters(this);
+                });
+
+                $("#contactForm").submit(function(e) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    this.classList.add('was-validated');
+
+                    if (this.checkValidity()) {
+                        sendEmail(this);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.succinctwebsolutions.com</loc>
+    <lastmod>2020-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.succinctwebsolutions.com/assets/logo.jpg</image:loc>
+      <image:caption>Website Development | Succinct Web Solutions</image:caption>
+      <image:title>Succinct Web Solutions</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.succinctwebsolutions.com/assets/Gabe-cutout-02.png</image:loc>
+      <image:caption>Full Stack Developer | Gabe Gates</image:caption>
+      <image:title>Founder / Operator</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.succinctwebsolutions.com/about.html</loc>
+    <lastmod>2020-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>.5</priority>
+    <image:image>
+      <image:loc>https://www.succinctwebsolutions.com/assets/Gabe-cutout-01.png</image:loc>
+      <image:caption>Full Stack Developer | Gabriel Gates</image:caption>
+      <image:title>Founder / Operator</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.succinctwebsolutions.com/our-work.html</loc>
+    <lastmod>2020-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>.8</priority>
+    <image:image>
+      <image:loc>https://www.succinctwebsolutions.com/assets/succinct-work-gatesbellearts.png</image:loc>
+      <image:caption>Our Work | Gates Belle Arts | Feel the Color | gatesbellearts.net</image:caption>
+      <image:title>Gates Belle Arts</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.succinctwebsolutions.com/assets/succinct-work-modpoint.png</image:loc>
+      <image:caption>Our Work | Mod. Point Home Builders Inc | modpointhomes.com</image:caption>
+      <image:title>Mod. Point Home Builders Inc.</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.succinctwebsolutions.com/services.html</loc>
+    <lastmod>2020-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <loc>https://www.succinctwebsolutions.com/contact.html</loc>
+    <lastmod>2020-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>.9</priority>
+  </url>
+</urlset>
