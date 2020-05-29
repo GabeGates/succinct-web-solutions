@@ -1,3 +1,4 @@
 Sitemap: https://www.succinctwebsolutions.com/sitemap.xml
 
 User-agent: *
+Disallow: 404.html
