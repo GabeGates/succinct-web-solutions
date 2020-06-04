@@ -89,6 +89,8 @@
 
         <script>
             function sendEmail(form) {
+                let submitButton = $(form).find(':button[type="submit"]');
+                submitButton.prop('disabled', true);
                 let data = transformFormIntoObject(form);
                 data.source = 'Contact Form : Succinct';
                 return $.ajax({
@@ -117,7 +119,11 @@
                             </button>
                         </div>
                     `);
+                })
+                .always(function(){
+                    submitButton.prop('disabled', false);
                 });
+
             }
 
             function transformFormIntoObject(form) {
