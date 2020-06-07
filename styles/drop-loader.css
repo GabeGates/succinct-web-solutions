@@ -1,0 +1,86 @@
+.drop-loader i {
+  position: relative;
+  top: -10px;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  font-style: inherit;
+}
+
+.d-20-1 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .2s;
+}
+
+.d-20-2 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .3s;
+}
+
+.d-20-3 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .4s;
+}
+
+.d-20-4 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .5s;
+
+}
+
+.d-20-5 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .6s;
+}
+
+.d-20-6 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .7s;
+}
+
+.d-20-7 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .8s;
+}
+
+.d-20-8 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: .9s;
+}
+
+.d-20-9 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.d-20-10 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: 1.1s;
+}
+
+.d-20-11 {
+  animation: drop-20 2.3s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+@keyframes drop-20 {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 0;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 0;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 10px
+    }
+}

@@ -9,6 +9,7 @@
 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="/styles/main.css" rel="stylesheet">
+        <link href="/styles/drop-loader.css" rel="stylesheet">
 
         <title>Contact Us | Succinct Web Solutions </title>
     </head>
@@ -78,7 +79,13 @@
                         <span></span>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Send Message</button>
+                <button type="submit" class="btn btn-primary mb-2" style="width:135px;">
+                    <div class="pre-load">Send Message</div>
+                    <div class="drop-loader d-none">
+                        <i class="d-20-1">S</i><i class="d-20-2">e</i><i class="d-20-3">n</i><i class="d-20-4">d</i><i class="d-20-5">i</i><i class="d-20-6">n</i><i class="d-20-7">g</i>
+                        <i class="d-20-8"> .</i><i class="d-20-9"> .</i><i class="d-20-10"> .</i>
+                    </div>
+                </button>
                 <input type="reset" value="Clear" class="btn btn-secondary mb-2">
             </form>
         </div>
@@ -91,6 +98,8 @@
             function sendEmail(form) {
                 let submitButton = $(form).find(':button[type="submit"]');
                 submitButton.prop('disabled', true);
+                submitButton.find('.pre-load')[0].classList.add('d-none');
+                submitButton.find('.drop-loader')[0].classList.remove('d-none');
                 let data = transformFormIntoObject(form);
                 data.source = 'Contact Form : Succinct';
                 return $.ajax({
@@ -122,6 +131,8 @@
                 })
                 .always(function(){
                     submitButton.prop('disabled', false);
+                    submitButton.find('.pre-load')[0].classList.remove('d-none');
+                    submitButton.find('.drop-loader')[0].classList.add('d-none');
                 });
 
             }
