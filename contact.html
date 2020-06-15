@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="canonical" href="https://www.succinctwebsolutions.com/contact">
+        <link rel="shortcut icon" href="/favicon.ico">
 
         <meta name="description" content="Tell us about your business needs and ideas. We specialize in search engine optimization websites for promoting businesses as well as enterprise-level applications to optimize workflow in your company. We have experience with frontend and backend technologies using a variety of languages, frameworks, and services. These technologies include Java, HTML, Sass, JavaScript, Angular, React, Spring, MySQL, MongoDB, Elasticache, AWS, Node, Docker, Webpack, and Cordova.">
 
@@ -13,83 +14,146 @@
 
         <title>Contact Us | Succinct Web Solutions </title>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top rounded">
-            <a class="navbar-brand" href="/">
-              <img src="/assets/logo.svg" class="d-inline-block align-top scinct-logo-icon" alt="Succinct Web Solutions Icon">
-              Web Solutions
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/our-work">Our Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/contact">Contact <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="container mt-4">
-            <h2>Let us Help</h2>
-        </div>
-
-        <div class="container">
-            <p class="lead">
-                Building a web solution is no simple task. We cover hosting your solution, setting up a domain, and generating your content to save you time.
-            </p>
-        </div>
-
-        <div class="container">
-            <form id="contactForm" class="needs-validation" novalidate>
-                <div class="mb-3">
-                    <label for="yourName">Full Name</label>
-                    <input type="text" class="form-control" id="yourName" name="name" placeholder="Eg John Doe" required>
-                    <div class="invalid-feedback">
-                        Please enter your full name.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="yourEmail">Email</label>
-                    <input type="email" class="form-control" id="yourEmail" name="email" placeholder="Eg example@email.com" required aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    <div class="invalid-feedback">
-                        Please enter your email.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="yourMessage">Message</label>
-                    <textarea class="form-control" id="yourMessage" name="message" placeholder="Write us a message about your business needs" minlength="100" required></textarea>
-                    <div class="invalid-feedback">
-                        Please enter a message in the text area; it must contain at least 100 characters.
-                        <span></span>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2" style="width:135px;">
-                    <div class="pre-load">Send Message</div>
-                    <div class="drop-loader d-none">
-                        <i class="d-20-1">S</i><i class="d-20-2">e</i><i class="d-20-3">n</i><i class="d-20-4">d</i><i class="d-20-5">i</i><i class="d-20-6">n</i><i class="d-20-7">g</i>
-                        <i class="d-20-8"> .</i><i class="d-20-9"> .</i><i class="d-20-10"> .</i>
-                    </div>
+    <body class="d-flex flex-column h-100">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded">
+                <a title="Succinct Web Solutions" class="navbar-brand" href="/">
+                    <svg class="d-inline-block align-top scinct-logo-icon" focusable="false"><use xlink:href="/assets/sprite.svg#succinct"></use></svg>
+                    Web Solutions
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <input type="reset" value="Clear" class="btn btn-secondary mb-2">
-            </form>
-        </div>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                <svg class="d-sm-none scinct-icon"><use xlink:href="/assets/sprite.svg#home"></use></svg>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">
+                                <svg class="d-sm-none scinct-icon"><use xlink:href="/assets/sprite.svg#address-card"></use></svg>
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/our-work">
+                                <svg class="d-sm-none scinct-icon"><use xlink:href="/assets/sprite.svg#hammer"></use></svg>
+                                Our Work
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services">
+                                <svg class="d-sm-none scinct-icon"><use xlink:href="/assets/sprite.svg#concierge-bell"></use></svg>
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/contact">
+                                <svg class="d-sm-none scinct-icon"><use xlink:href="/assets/sprite.svg#envelope"></use></svg>
+                                Contact <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-shrink-0">
+
+            <div class="container mt-4">
+                <h2>Let us Help</h2>
+            </div>
+
+            <div class="container">
+                <p class="lead">
+                    Building a web solution is no simple task. We cover hosting your solution, setting up a domain, and generating your content to save you time.
+                </p>
+            </div>
+
+            <div class="container">
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="yourName">Full Name</label>
+                        <input type="text" class="form-control" id="yourName" name="name" placeholder="Eg John Doe" required>
+                        <div class="invalid-feedback">
+                            Please enter your full name.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="yourEmail">Email</label>
+                        <input type="email" class="form-control" id="yourEmail" name="email" placeholder="Eg example@email.com" required aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <div class="invalid-feedback">
+                            Please enter your email.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="yourMessage">Message</label>
+                        <textarea class="form-control" id="yourMessage" name="message" placeholder="Write us a message about your business needs" minlength="100" required></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a message in the text area; it must contain at least 100 characters.
+                            <span></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2" style="width:135px;">
+                        <div class="pre-load">Send Message</div>
+                        <div class="drop-loader d-none">
+                            <i class="d-20-1">S</i><i class="d-20-2">e</i><i class="d-20-3">n</i><i class="d-20-4">d</i><i class="d-20-5">i</i><i class="d-20-6">n</i><i class="d-20-7">g</i>
+                            <i class="d-20-8"> .</i><i class="d-20-9"> .</i><i class="d-20-10"> .</i>
+                        </div>
+                    </button>
+                    <input type="reset" value="Clear" class="btn btn-secondary mb-2">
+                </form>
+            </div>
+        </main>
+        <footer class="scinct-footer text-white-50 mt-auto pt-3 lead">
+            <div class="container-fluid bg-dark py-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="h6">
+                            <svg class="scinct-icon"><use xlink:href="/assets/sprite.svg#building"></use></svg>
+                            Company
+                        </div>
+                        <div><a class="text-light" href="/services">Services</a></div>
+                        <div><a class="text-light" href="/our-work">Our Work</a></div>
+                    </div>
+                    <div class="col">
+                        <div class="h6">
+                            <svg class="scinct-icon-sm"><use xlink:href="/assets/sprite.svg#graduation-cap"></use></svg>
+                            Learn
+                        </div>
+                        <div><a class="text-light" href="/about">About</a></div>
+                        <div><a class="text-light" href="/contact">Contact</a></div>
+                    </div>
+                    <div class="col">
+                        <div class="h6">
+                            <svg class="scinct-icon"><use xlink:href="/assets/sprite.svg#link"></use></svg>
+                            Connect
+                        </div>
+                        <a title="Facebook" class="scinct-icon-container-md text-light" href="https://www.facebook.com/succinct.web.solutions/">
+                            <svg role="img" aria-label="Facebook">
+                                <title>Facebook</title>
+                                <use xlink:href="/assets/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a title="Instagram" class="scinct-icon-container-md text-light" href="https://www.instagram.com/succinct.web.solutions/">
+                            <svg role="img" aria-label="Instagram">
+                                <title>Instagram</title>
+                                <use xlink:href="/assets/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span class="text-muted">© 2017 - 2020 Succinct Web Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
