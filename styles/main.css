@@ -53,7 +53,7 @@
     height: 30px;
 }
 
-a.scinct-icon {
+a.scinct-icon-container, a.scinct-icon-container-sm, a.scinct-icon-container-md, a.scinct-icon-container-lg {
     text-decoration: none !important;
 }
 
