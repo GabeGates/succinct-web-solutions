@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
 
         <title>Contact Us | Succinct Web Solutions </title>
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column min-vh-100">
         <header class="sticky-top">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded">
                 <a title="Succinct Web Solutions" class="navbar-brand" href="/">
@@ -98,14 +98,20 @@
                             <span></span>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2" style="width:135px;">
-                        <div class="pre-load">Send Message</div>
+                    <button type="submit" class="btn btn-primary mb-2">
+                        <div class="pre-load">
+                            <svg class="scinct-icon"><use xlink:href="/assets/sprite.svg#paper-plane"></use></svg>
+                            Send Message
+                        </div>
                         <div class="drop-loader d-none">
                             <i class="d-20-1">S</i><i class="d-20-2">e</i><i class="d-20-3">n</i><i class="d-20-4">d</i><i class="d-20-5">i</i><i class="d-20-6">n</i><i class="d-20-7">g</i>
                             <i class="d-20-8"> .</i><i class="d-20-9"> .</i><i class="d-20-10"> .</i>
                         </div>
                     </button>
-                    <input type="reset" value="Clear" class="btn btn-secondary mb-2">
+                    <button type="reset" class="btn btn-secondary mb-2">
+                        <svg class="scinct-icon"><use xlink:href="/assets/sprite.svg#ban"></use></svg>
+                        Clear
+                    </button>
                 </form>
             </div>
         </main>

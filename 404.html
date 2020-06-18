@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
 
         <title>Page Not Found | Succinct Web Solutions </title>
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column min-vh-100">
         <header class="sticky-top">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded">
                 <a title="Succinct Web Solutions" class="navbar-brand" href="/">
@@ -62,7 +62,10 @@
                 <div class="row">
                     <div class="col-md">
                         <div class="card h-100 border-warning">
-                            <div class="card-header h3 bg-warning"><strong>Sorry, we could not find that page</strong></div>
+                            <div class="card-header h3 bg-warning">
+                                <svg class="scinct-icon-lg float-right"><use xlink:href="/assets/sprite.svg#sad-cry"></use></svg>
+                                <strong>Sorry, we could not find that page</strong>
+                            </div>
                             <div class="card-body">
                                 <p class="card-text lead">
                                     This may have happened because:
@@ -78,7 +81,10 @@
             </div>
 
             <div class="container text-center">
-                <a href="/" class="btn btn-primary">Return to our Homepage</a>
+                <a href="/" class="btn btn-primary">
+                    <svg class="scinct-icon"><use xlink:href="/assets/sprite.svg#home"></use></svg>
+                    Return to our Homepage
+                </a>
             </div>
         </main>
         <footer class="scinct-footer text-white-50 mt-auto pt-3 lead">
